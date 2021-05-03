@@ -10,16 +10,24 @@
 
     <div class="container">
         <?php
-
             $badword = $_GET['badword'];
             $paragraph = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, animi, inventore corrupti laboriosam omnis expedita doloremque eius repellendus repellat unde cumque, numquam natus. Autem earum, repellendus sed libero ipsum dolores.";
-            
-            echo str_replace($badword,"***",$paragraph);
-            echo "<br>";
-            echo strlen($paragraph);
         ?>
-
-
+        <div class="paragaph">
+            <?php 
+                echo $paragraph
+            ?>
+        </div>
+        <div class="paragraph">
+            <?php 
+                echo strlen($paragraph)
+            ?>
+        </div>
+        <div class="paragraph">
+            <?php
+                echo str_replace($badword,"***",$paragraph);
+            ?>
+        </div>
     </div>
 
     
